@@ -29,7 +29,9 @@ author:
   location         : "Vrije Universiteit Brussel, Belgium"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=Q9hCZvwAAAAJ"
-  email            : "Ruben.Denzel.Opdebeeck@vub.be"
+  email            :
+    - "Ruben.Denzel.Opdebeeck@vub.be"
+    - "hi@ropdeb.ee"
   dblp             : "https://dblp.uni-trier.de/pid/278/9906.html"
   researchgate     : "https://www.researchgate.net/profile/Ruben_Opdebeeck"
   github           : "ROpdebee"
