@@ -55,8 +55,8 @@
     {% endif %}
 
     {% if post.doi or post.paperurl or post.preprinturl %}
-    <div class="author__urls-wrapper">
-      <ul class="author__urls">
+    <div class="archive__urls-wrapper">
+      <ul class="archive__urls">
         {% if post.doi %}
           <li><a href="https://doi.org/{{ post.doi }}"><i class="ai ai-fw ai-doi"></i> {{ post.doi }}</a></li>
         {% endif %}

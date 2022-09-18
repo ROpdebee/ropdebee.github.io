@@ -40,8 +40,8 @@
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
 
     {% if post.slidesurl or post.videourl or post.posterurl %}
-    <div class="author__urls-wrapper">
-      <ul class="author__urls">
+    <div class="archive__urls-wrapper">
+      <ul class="archive__urls">
         {% if post.slidesurl %}
           <li><a href="{{ post.slidesurl }}"><i class="fa fa-fw fa-file-pdf"></i> Presentation slides</a></li>
         {% endif %}

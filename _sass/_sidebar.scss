@@ -130,7 +130,7 @@
   }
 }
 
-.author__urls-wrapper {
+.author__urls-wrapper, .archive__urls-wrapper {
   position: relative;
   display: table-cell;
   vertical-align: middle;
@@ -145,20 +145,26 @@
     }
   }
 
-  @include breakpoint($large) {
+  &.archive__urls-wrapper {
     display: block;
   }
 
-  button {
-    margin-bottom: 0;
-
+  &.author__urls-wrapper {
     @include breakpoint($large) {
-      display: none;
+      display: block;
+    }
+
+    button {
+      margin-bottom: 0;
+
+      @include breakpoint($large) {
+        display: none;
+      }
     }
   }
 }
 
-.author__urls {
+.author__urls, .archive__urls {
   display: none;
   position: absolute;
   right: 0;
@@ -172,7 +178,7 @@
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
 
-  @include breakpoint($large) {
+  &.archive__urls {
     display: block;
     position: relative;
     margin: 0;
@@ -180,6 +186,26 @@
     border: 0;
     background: transparent;
     box-shadow: none;
+  }
+
+  &.author__urls {
+    @include breakpoint($large) {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+
+      &:after {
+        display: none;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
   }
 
   &:before {
@@ -193,10 +219,6 @@
     border-width: 0 10px 10px;
     border-color: $border-color transparent;
     z-index: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
   }
 
   &:after {
@@ -210,10 +232,6 @@
     border-width: 0 10px 10px;
     border-color: #fff transparent;
     z-index: 1;
-
-    @include breakpoint($large) {
-      display: none;
-    }
   }
 
   li {
