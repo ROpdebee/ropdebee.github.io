@@ -38,5 +38,21 @@
     {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
     {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+
+    {% if post.slidesurl or post.videourl or post.posterurl %}
+    <div class="author__urls-wrapper">
+      <ul class="author__urls">
+        {% if post.slidesurl %}
+          <li><a href="{{ post.slidesurl }}"><i class="fa fa-fw fa-file-pdf"></i> Presentation slides</a></li>
+        {% endif %}
+        {% if post.videourl %}
+          <li><a href="{{ post.videourl }}"><i class="fa fa-fw fa-file-video"></i> Video</a></li>
+        {% endif %}
+        {% if post.posterurl %}
+            <li><a href="{{ post.posterurl }}"><i class="fa fa-fw fa-file-pdf"></i> Poster</a></li>
+          {% endif %}
+      </ul>
+    </div>
+    {% endif %}
   </article>
 </div>

@@ -35,7 +35,7 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+        {% if page.type %}<p>{{page.type}} at {{ page.venue }},  {{page.location}} {% endif %}
 
         </header>
       {% endunless %}
@@ -44,6 +44,32 @@ layout: default
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
+
+      {% if page.slidesurl or page.videourl or page.posterurl %}
+      <div class="author__urls-wrapper">
+        <ul class="author__urls">
+          {% if page.slidesurl %}
+            <li><a href="{{ page.slidesurl }}"><i class="fa fa-fw fa-file-pdf"></i> Presentation slides</a></li>
+          {% endif %}
+          {% if page.videourl %}
+            <li><a href="{{ page.videourl }}"><i class="fa fa-fw fa-file-video"></i> Video</a></li>
+          {% endif %}
+          {% if page.posterurl %}
+            <li><a href="{{ page.posterurl }}"><i class="fa fa-fw fa-file-pdf"></i> Poster</a></li>
+          {% endif %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if page.related_publications %}
+      <h3>Related publication(s)</h3>
+      <ul>
+        {% for related_publication in page.related_publications %}
+        <li><a href="/publication/{{ related_publication.slug }}">{{ related_publication.name }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}

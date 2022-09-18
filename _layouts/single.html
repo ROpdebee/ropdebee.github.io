@@ -41,19 +41,45 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        
-             
-        {% if page.citation and page.paperurl %}
-          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
-        {% elsif page.citation %}
-          <p>Recommended citation: {{ page.citation }} </p>
-        {% endif %}
-    
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
+
+        {% if page.citation and page.doi %}
+          <p>Recommended citation: {{ page.citation }} doi: <a href="https://doi.org/{{ page.doi }}"><u>{{ page.doi }}</u></a></p>
+        {% elsif page.citation %}
+          <p>Recommended citation: {{ page.citation }} </p>
+        {% elsif page.paperurl %}
+          <p>Download <a href=" {{ page.paperurl }} "><u>here</u></a></p>
+        {% endif %}
+
+        {% if page.doi or page.paperurl or page.preprinturl %}
+        <div class="author__urls-wrapper">
+          <ul class="author__urls">
+            {% if page.doi %}
+              <li><a href="https://doi.org/{{ page.doi }}"><i class="ai ai-fw ai-doi"></i> {{ page.doi }}</a></li>
+            {% endif %}
+            {% if page.paperurl %}
+              <li><a href="{{ page.paperurl }}"><i class="fa fa-fw fa-file-pdf"></i> Paper</a></li>
+            {% endif %}
+            {% if page.preprinturl %}
+              <li><a href="{{ page.preprinturl }}"><i class="fa fa-fw fa-file-pdf"></i> Pre-print</a></li>
+            {% endif %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if page.related_talks %}
+        <h3>Related talk(s)</h3>
+        <ul>
+          {% for related_talk in page.related_talks %}
+          <li><a href="/talk/{{ related_talk.slug }}">{{ related_talk.name }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
