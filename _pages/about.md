@@ -25,7 +25,7 @@ In 2019, I obtained my MSc in Applied Sciences and Engineering: Computer Science
 {% endfor %}
 </ul>
 
-## Recent talks and presentations
+## Recent/upcoming talks and presentations
 
 <ul>
 {% assign recent_talks = site.talks | reverse | slice: 0, 3 %}
