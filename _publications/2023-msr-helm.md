@@ -5,7 +5,8 @@ permalink: /publication/2023-msr-helm
 date: 2023-05-16
 venue: Proceedings of the 20th International Conference on Mining Software Repositories (MSR'23)
 venue_abbrev: MSR'23
-preprinturl: 'https://soft.vub.ac.be/Publications/2023/vub-tr-soft-23-08.pdf'
+pdf_url: 'https://soft.vub.ac.be/Publications/2023/vub-tr-soft-23-08.pdf'
+pdf_type: Pre-print
 citation: 'Zerouali, A., Opdebeeck, R. & De Roover, C. (2023). <i>Helm Charts for Kubernetes Applications: Evolution, Outdatedness and Security Risks</i> In Proceedings of the 20th International Conference on Mining Software Repositories (MSR 2023).'
 doi: 10.1109/MSR59073.2023.00078
 related_talks:

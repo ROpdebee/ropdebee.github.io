@@ -52,21 +52,18 @@
       <p>Recommended citation: {{ post.citation }} doi: <a href="https://doi.org/{{ post.doi }}"><u>{{ post.doi }}</u></a></p>
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
-    {% elsif post.paperurl %}
-      <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
+    {% elsif post.pdf_url %}
+      <p>Download <a href=" {{ post.pdf_url }} "><u>here</u></a></p>
     {% endif %}
 
-    {% if post.doi or post.paperurl or post.preprinturl %}
+    {% if post.doi or post.pdf_url %}
     <div class="archive__urls-wrapper">
       <ul class="archive__urls">
         {% if post.doi %}
           <li><a href="https://doi.org/{{ post.doi }}"><i class="ai ai-fw ai-doi"></i> {{ post.doi }}</a></li>
         {% endif %}
-        {% if post.paperurl %}
-          <li><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf"></i> Paper</a></li>
-        {% endif %}
-        {% if post.preprinturl %}
-          <li><a href="{{ post.preprinturl }}"><i class="fa fa-fw fa-file-pdf"></i> Pre-print</a></li>
+        {% if post.pdf_url %}
+          <li><a href="{{ post.pdf_url }}"><i class="fa fa-fw fa-file-pdf"></i> {{ post.pdf_type | default: "Paper" }}</a></li>
         {% endif %}
       </ul>
     </div>

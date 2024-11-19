@@ -5,7 +5,8 @@ permalink: /publication/2021-saner
 date: 2021-03-09
 venue: Proceedings of the 2021 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER'21)
 venue_abbrev: SANER'21
-preprinturl: 'https://soft.vub.ac.be/Publications/2021/vub-tr-soft-21-01.pdf'
+pdf_url: 'https://soft.vub.ac.be/Publications/2021/vub-tr-soft-21-01.pdf'
+pdf_type: Pre-print
 doi: 10.1109/SANER50967.2021.00072
 citation: 'Opdebeeck, R., Fabry, J., Molderez, T. C., De Bleser, J., & De Roover, C. (2021). <i>Mining for Graph-Based Library Usage Patterns in COBOL Systems.</i> In Proceedings of the 2021 IEEE International Conference on Software Analysis, Evolution and Reengineering (pp. 595-599). IEEE.'
 related_talks:

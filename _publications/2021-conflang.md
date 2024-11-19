@@ -6,7 +6,7 @@ published_prefix: 'Unpublished presentation abstract'
 date: 2021-10-18
 venue: 1st Workshop on Configuration Languages (CONFLANG)
 venue_abbrev: CONFLANG
-paperurl: 'https://researchportal.vub.be/files/75908280/conflang21.pdf'
+pdf_url: 'https://researchportal.vub.be/files/75908280/conflang21.pdf'
 citation: 'Opdebeeck, R., & De Roover, C. (2021). <i>The Pitfalls of Ansible’s Variable and Template Expression Semantics.</i> Abstract from 1st Workshop on Configuration Languages, Chicago, United States.'
 related_talks:
     - name: The Pitfalls of Ansible’s Variable and Template Expression Semantics (full)

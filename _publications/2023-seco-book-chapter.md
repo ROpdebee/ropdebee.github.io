@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2023-seco-book-chapter
 date: 2023-08-09
 venue: "Software Ecosystems: Tooling and Analytics"
-preprinturl: 'https://researchportal.vub.be/files/105468493/preprint.pdf'
+pdf_url: 'https://researchportal.vub.be/files/105468493/preprint.pdf'
+pdf_type: Pre-print
 citation: 'Opdebeeck, R., Zerouali, A. & De Roover, C. (2023). <i>Infrastructure-as-Code Ecosystems</i>. In T. Mens, C. De Roover, & A. Cleve (Eds.), Software Ecosystems: Tooling and Analytics (pp. 215-245). Springer.'
 doi: 10.1007/978-3-031-36060-2_9
 ---

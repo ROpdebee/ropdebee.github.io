@@ -5,7 +5,8 @@ permalink: /publication/2023-scam-dh
 date: 2023-10-01
 venue: Proceedings of the 23rd IEEE International Working Conference on Source Code Analysis and Manipulation (SCAM'23)
 venue_abbrev: SCAM'23
-preprinturl: 'https://soft.vub.ac.be/Publications/2023/vub-tr-soft-23-14.pdf'
+pdf_url: 'https://soft.vub.ac.be/Publications/2023/vub-tr-soft-23-14.pdf'
+pdf_type: Pre-print
 citation: "Opdebeeck, R., Lesy, J., Zerouali, A. & De Roover, C. (2023). <i>The Docker Hub Image Inheritance Network: Construction and Empirical Insights</i> In Proceedings of the 23rd IEEE International Working Conference on Source Code Analysis and Manipulation (SCAM'23)."
 doi: 10.1109/SCAM59687.2023.00029
 related_talks:

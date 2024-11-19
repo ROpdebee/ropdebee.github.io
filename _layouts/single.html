@@ -53,21 +53,18 @@ layout: default
           <p>Recommended citation: {{ page.citation }} doi: <a href="https://doi.org/{{ page.doi }}"><u>{{ page.doi }}</u></a></p>
         {% elsif page.citation %}
           <p>Recommended citation: {{ page.citation }} </p>
-        {% elsif page.paperurl %}
-          <p>Download <a href=" {{ page.paperurl }} "><u>here</u></a></p>
+        {% elsif page.pdf_url %}
+          <p>Download <a href=" {{ page.pdf_url }} "><u>here</u></a></p>
         {% endif %}
 
-        {% if page.doi or page.paperurl or page.preprinturl %}
+        {% if page.doi or page.pdf_url %}
         <div class="archive__urls-wrapper">
           <ul class="archive__urls">
             {% if page.doi %}
               <li><a href="https://doi.org/{{ page.doi }}"><i class="ai ai-fw ai-doi"></i> {{ page.doi }}</a></li>
             {% endif %}
-            {% if page.paperurl %}
-              <li><a href="{{ page.paperurl }}"><i class="fa fa-fw fa-file-pdf"></i> {{ page.pdf_type | default: "Paper" }}</a></li>
-            {% endif %}
-            {% if page.preprinturl %}
-              <li><a href="{{ page.preprinturl }}"><i class="fa fa-fw fa-file-pdf"></i> Pre-print</a></li>
+            {% if page.pdf_url %}
+              <li><a href="{{ page.pdf_url }}"><i class="fa fa-fw fa-file-pdf"></i> {{ page.pdf_type | default: "Paper" }}</a></li>
             {% endif %}
           </ul>
         </div>

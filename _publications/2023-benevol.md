@@ -6,7 +6,7 @@ published_prefix: 'Unpublished presentation abstract'
 date: 2023-11-27
 venue: 22nd Belgium-Netherlands Software Evolution Workshop (BENEVOL'23)
 venue_abbrev: BENEVOL'23
-paperurl: 'https://researchportal.vub.be/files/106024786/main.pdf'
+pdf_url: 'https://researchportal.vub.be/files/106024786/main.pdf'
 citation: 'Opdebeeck, R., Zerouali, A. & De Roover, C. (2023). <i>Behaviour-aware Security Smell Detection for Infrastructure as Code.</i> Abstract from 22nd Belgium-Netherlands Software Evolution Workshop, Nijmegen, Netherlands.'
 related_talks:
     - name: Behaviour-aware Security Smell Detection for Infrastructure as Code

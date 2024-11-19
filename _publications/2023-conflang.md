@@ -6,7 +6,7 @@ published_prefix: 'Unpublished presentation abstract'
 date: 2023-10-24
 venue: 2nd Workshop on Configuration Languages (CONFLANG'23)
 venue_abbrev: CONFLANG'23
-paperurl: 'https://researchportal.vub.be/files/106024645/main.pdf'
+pdf_url: 'https://researchportal.vub.be/files/106024645/main.pdf'
 citation: 'Opdebeeck, R., & De Roover, C. (2023). <i>Ansible Is Turing Complete.</i> Abstract from 2nd Workshop on Configuration Languages, Cascais, Portugal.'
 related_talks:
     - name: Ansible Is Turing Complete

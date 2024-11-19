@@ -5,7 +5,8 @@ permalink: /publication/2023-msr-ansible
 date: 2023-05-16
 venue: Proceedings of the 20th International Conference on Mining Software Repositories (MSR'23)
 venue_abbrev: MSR'23
-preprinturl: 'https://soft.vub.ac.be/Publications/2023/vub-tr-soft-23-09.pdf'
+pdf_url: 'https://soft.vub.ac.be/Publications/2023/vub-tr-soft-23-09.pdf'
+pdf_type: Pre-print
 citation: 'Opdebeeck, R., Zerouali, A., & De Roover, C. (2023). <i>Control and Data Flow in Security Smell Detection for Infrastructure as Code: Is It Worth the Effort?</i> In Proceedings of the 20th International Conference on Mining Software Repositories (MSR 2023).'
 doi: 10.1109/MSR59073.2023.00079
 related_talks:
