@@ -6,40 +6,39 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Ruben Opdebeeck"
-title_separator          : "-"
-name                     : &name "Ruben Opdebeeck"
-description              : &description "Ruben Opdebeeck's personal page"
-url                      : https://ropdeb.ee # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ROpdebee/ropdebee.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+locale: "en-US"
+title: "Ruben Opdebeeck"
+title_separator: "-"
+name: &name "Ruben Opdebeeck"
+description: &description "Ruben Opdebeeck's personal page"
+url: https://ropdeb.ee # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: "" # the subpath of your site, e.g. "/blog"
+repository: "ROpdebee/ropdebee.github.io"
+teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs: false # true, false (default)
+words_per_minute: 160
+future: true
+read_more: "disabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link: false #change to true to add link to talkmap on talks page
 
 # Site Author
 author:
-  name             : "Ruben Opdebeeck"
-  avatar           : "profile.png"
-  bio              : "Ph.D. Candidate in Computer Science"
-  location         : "Vrije Universiteit Brussel, Belgium"
-  employer         :
-  googlescholar    : "https://scholar.google.com/citations?user=Q9hCZvwAAAAJ"
-  email            :
+  name: "Ruben Opdebeeck"
+  avatar: "profile.png"
+  bio: "Post-doctoral Researcher in Computer Science"
+  location: "Vrije Universiteit Brussel, Belgium"
+  employer:
+  googlescholar: "https://scholar.google.com/citations?user=Q9hCZvwAAAAJ"
+  email:
     - address: "Ruben.Denzel.Opdebeeck@vub.be"
       name: Academic Email
     - address: "hi@ropdeb.ee"
       name: Personal Email
-  dblp             : "https://dblp.org/pid/278/9906.html"
-  researchgate     : "https://www.researchgate.net/profile/Ruben_Opdebeeck"
-  github           : "ROpdebee"
-  orcid            : "https://orcid.org/0000-0002-0938-4843"
-  twitter          : "ROpdebee"
-
+  dblp: "https://dblp.org/pid/278/9906.html"
+  researchgate: "https://www.researchgate.net/profile/Ruben_Opdebeeck"
+  github: "ROpdebee"
+  orcid: "https://orcid.org/0000-0002-0938-4843"
+  twitter: "ROpdebee"
 
 # Reading Files
 include:
@@ -76,14 +75,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -96,7 +93,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Collections
 collections:
   teaching:
@@ -108,7 +104,6 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-
 
 # Defaults
 defaults:
@@ -171,13 +166,11 @@ sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
 # Outputting
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
 timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins
 plugins:
@@ -191,7 +184,6 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jemoji
-
 
 # Archives
 #  Type
@@ -220,7 +212,6 @@ tag_archive:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
-
 
 # HTML Compression
 # - http://jch.penibelst.de/

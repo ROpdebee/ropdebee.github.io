@@ -21,7 +21,7 @@ In 2017, I obtained my BSc in Computer Sciences at Vrije Universiteit Brussel wi
 <ul>
 {% assign recent_pubs = site.publications | reverse | slice: 0, 3 %}
 {% for post in recent_pubs %}
-  <li>{{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.permalink }}">{{ post.title }} ({{ post.venue_abbrev }})</a></li>
+  <li>{{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.permalink }}">{{ post.title }} ({{ post.venue_abbrev | default: post.type }})</a></li>
 {% endfor %}
 </ul>
 
