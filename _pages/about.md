@@ -3,12 +3,12 @@ permalink: /
 title: "About Me"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a post-doctoral research at the [Software Languages Lab](https://soft.vub.ac.be/soft/) of the [Vrije Universiteit Brussel](https://www.vub.be/).
+I am a post-doctoral researcher at the [Software Languages Lab](https://soft.vub.ac.be/soft/) of the [Vrije Universiteit Brussel](https://www.vub.be/).
 My research mainly revolves around defect detection for Infrastructure as Code, with a focus on the Ansible language.
 My research interests include software quality and code smells, pattern mining in source code, anomaly detection, library/API usages, and mining software repositories.
 
